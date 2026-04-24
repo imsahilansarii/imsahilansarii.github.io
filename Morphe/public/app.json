@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reddit_app",
+    "name": "Reddit",
+    "version": "v2026.14.0",
+    "icon": "https://link-to-icon.png"
+  },
+  {
+    "id": "yt_morphe",
+    "name": "YouTube Morphe",
+    "version": "v21.15.282",
+    "icon": "https://link-to-icon.png"
+  }
+]
