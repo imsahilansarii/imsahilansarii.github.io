@@ -1,0 +1,140 @@
+:root {
+    --bg-color: #fcfcfc;
+    --text-primary: #1a1a1a;
+    --nav-bg: #f0f0f0;
+    --nav-btn-bg: #121826;
+    --nav-btn-color: #ffffff;
+    --update-badge-bg: rgba(255, 255, 255, 0.3);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-primary: #f0f0f0;
+    --nav-bg: #1e1e1e;
+    --nav-btn-bg: #2d3342;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+    padding-bottom: 100px; /* Space for bottom nav */
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* App Card Styling */
+.app-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.app-card:active {
+    transform: scale(0.98);
+}
+
+.app-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 12px;
+    padding: 5px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.app-info {
+    flex-grow: 1;
+}
+
+.app-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.app-version {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Update Badge */
+.update-badge {
+    background-color: var(--update-badge-bg);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.update-badge .material-symbols-rounded {
+    font-size: 16px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    background: var(--bg-color); /* Matches background to blend in */
+    padding: 10px;
+}
+
+.nav-btn {
+    background-color: var(--nav-btn-bg);
+    color: var(--nav-btn-color);
+    border: none;
+    border-radius: 25px;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: opacity 0.2s;
+}
+
+.nav-btn:active {
+    opacity: 0.8;
+}
