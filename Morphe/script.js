@@ -51,7 +51,7 @@ async function loadApps() {
     
     try {
         // Fetching data from the JSON file
-        const response = await fetch('apps.json');
+        const response = await fetch('/public/apps.json');
         const apps = await response.json();
 
         apps.forEach(app => {
